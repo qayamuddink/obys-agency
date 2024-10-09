@@ -70,5 +70,7 @@ function cursorAnimation(){
 }
 
 loadingAnimation()
-cursorAnimation();
+// cursorAnimation();
+
+console.log(" hi there")
 
