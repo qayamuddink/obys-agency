@@ -158,9 +158,18 @@ body{
     overflow: hidden;
     display: flex;
     align-items: center;
-    position: relative;
-    z-index: 99999
+    /* position: relative;
+    
+    z-index: 99999 */
+
+    /* overflow-x: hidden */
+    /* overflow-y: hidden; */
+    /* position: relative; */
 }
+
+
+
+
 .hero:nth-child(2){
     margin-top: 18vh;
 }
@@ -169,8 +178,19 @@ body{
     font-weight: 600;
     text-transform: uppercase;
     line-height: 7.2vw;
-    /* position: relative; */
+    position: relative;
 }
+
+#hero1::before{
+    content: "01";
+    position: absolute;
+    font-size: 3vw;
+    font-weight: 100;
+    font-family: "silk serif";
+    top: 29%;
+    left: 20%;
+}
+
 
 .hero h2 {
     font-size: 7.2vw;
@@ -257,6 +277,17 @@ body{
 #page4-content h1{
     font-size: 7vw;
     text-transform: uppercase;
+    position: relative;
+}
+
+#page4-content h1::before{
+    content: "03";
+    font-size: 3vw;
+    font-weight: 100;
+    position: absolute;
+    left: -12%;
+    top: 8%;
+    font-family: "silk serif";
 }
 
 #page4-content .underline{
@@ -274,12 +305,14 @@ body{
 }
 #page4-flex{
     display: flex;
+    /* margin-bottom: 7vw; */
 }
 #page4-flex img{
     width: 48%;
 }
 
 #page4-flex p{
+    
     font-size: 0.9vw;
     width: 19%;
     margin-left: 1vw;
@@ -293,6 +326,7 @@ body{
     position: relative;
     margin-top: -35vh;
     margin-left : 26vw;
+    /* border-radius: 30px; */
 }
 
 .blue-div-elem{
@@ -301,6 +335,7 @@ body{
     justify-content: space-between;
     /* background-color: red; */
     padding: 1.4vw 0;
+    /* margin-bottom: 3vw; */
     border-bottom: 2px solid #ffffffde;
 }
 
@@ -391,24 +426,40 @@ body{
 }
 
 #footer{
-    height: 80vh;
+    height: 85vh;
     width: 100%;
-    background-color: red;
+    /* background-color: red; */
     position: relative;
     padding-left: 28vw;
+    padding-right: 2vw;
 }
+
 
 #footer h1{
-    font-size: 8vw;
+    font-size: 7vw;
+    text-transform: uppercase;
     /* background-color: #3f7df4; */
-
+    position: relative;
 
 }
+
+#footer h1::before{
+    content: "04";
+    position: absolute;
+    font-size: 3vw;
+    font-weight: 100;
+    font-family: "silk serif";
+    left: -12%;
+    top: 8%;
+}
+
+
 .underline{
     height: 2px;
     width: 100%;
     background-color:#fff;
-    margin: 2vw 0;
+    
+    margin: 3vw 0;
 }
 
 #footer-div{
@@ -417,13 +468,26 @@ body{
     align-items: flex-start ;
     padding-right: 15vw;
     padding-top: 4vw;
+    margin-bottom: 6vw;
 }
 
 #footer-div h6{
     font-size: 0.9vw;
+    margin-bottom: 1.5vw;
+    font-weight: 500;
+}
 
+.box{
+    width: 20%;
 }
 #footer-div h5{
-    font-size: 1.2vw;
-    margin: 0.2vw;
+    font-size: 1.4vw;
+    font-weight: 500;
+    /* margin: 0.2vh 0; */
+}
+
+#footer>h5 {
+    color: #fff;
+    font-weight: 500;
+    font-size: 1vw;
 }
